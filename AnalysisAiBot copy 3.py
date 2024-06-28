@@ -85,7 +85,7 @@ payload = {
             ] + [message["content"][1] for message in messages]
         }
     ],
-    "max_tokens": 4000
+    "max_tokens": 3000
 }
 
 response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)

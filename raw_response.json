@@ -1,0 +1,23 @@
+{
+    "id": "chatcmpl-9ezTOe7sVdIRmFeXYxlqVUpp8wPw9",
+    "object": "chat.completion",
+    "created": 1719556450,
+    "model": "gpt-4o-2024-05-13",
+    "choices": [
+        {
+            "index": 0,
+            "message": {
+                "role": "assistant",
+                "content": "```json\n{\n  \"Number of People\": \"10 or more people\",\n  \"Characters\": [\"Various ages and genders\"],\n  \"Ethnicity\": \"Mixed race\",\n  \"Screen Speed\": \"Normal speed\",\n  \"Technique\": [\"Parody\", \"Humor\"],\n  \"Color\": \"Color\",\n  \"Era\": \"Present\",\n  \"Background\": [\"Indoor\", \"Outdoor\"],\n  \"Perspective\": [\"Third-person perspective\", \"Facing the camera\"],\n  \"Angle\": [\"Eye level\", \"Low angle shot\", \"Bird's eye view\"],\n  \"Camera Movement\": [\"Static\", \"Pan\"],\n  \"Action\": [\"Celebrating\", \"Watching\", \"Showing card\", \"Reacting\"],\n  \"Emotion Expression\": [\"Happy\", \"Surprised\", \"Excited\"],\n  \"Mood\": [\"Cheerful\", \"Energetic\"],\n  \"Animals\": \"None\",\n  \"Lighting\": [\"Artificial light\", \"Natural light\"],\n  \"Composition\": [\"Rule of thirds\", \"Symmetry\"],\n  \"Genre\": [\"Comedy\"],\n  \"Editing Style\": [\"Continuous\"],\n  \"Texture\": \"Glossy\",\n  \"Style\": [\"Modern\"],\n  \"Audio\": [\"Diegetic sound\", \"Soundtrack\"],\n  \"Narrative Structure\": \"Linear\"\n}\n```"
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 5099,
+        "completion_tokens": 261,
+        "total_tokens": 5360
+    },
+    "system_fingerprint": "fp_4008e3b719"
+}

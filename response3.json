@@ -1,66 +1,71 @@
 {
-    "Number of People": "10 or more people",
+    "Number of People": "Multiple people",
     "Characters": [
-        "Various ages and genders"
+        "20s (female)",
+        "20s (male)",
+        "Mixed Ages",
+        "Character animation"
     ],
     "Ethnicity": "Mixed race",
     "Screen Speed": "Normal speed",
     "Technique": [
-        "Parody",
-        "Humor"
+        "Character animation",
+        "Blending Live-Action and Animation"
     ],
     "Color": "Color",
     "Era": "Present",
     "Background": [
-        "Indoor",
-        "Outdoor"
+        "Outdoor",
+        "Mountain"
     ],
     "Perspective": [
-        "Third-person perspective",
-        "Facing the camera"
+        "Third-person perspective"
     ],
     "Angle": [
         "Eye level",
-        "Low angle shot",
-        "Bird's eye view"
+        "Aerial shot",
+        "Long shot",
+        "Close-up"
     ],
     "Camera Movement": [
         "Static",
-        "Pan"
+        "Tilt",
+        "Zoom"
     ],
     "Action": [
-        "Celebrating",
-        "Watching",
-        "Showing card",
-        "Reacting"
+        "Talking",
+        "Gathering",
+        "Exploring"
     ],
     "Emotion Expression": [
-        "Happy",
-        "Surprised",
-        "Excited"
+        "Serious",
+        "Worried",
+        "Determined"
     ],
     "Mood": [
         "Cheerful",
-        "Energetic"
+        "Energetic",
+        "Tense"
     ],
     "Animals": "None",
     "Lighting": [
-        "Artificial light",
         "Natural light"
     ],
     "Composition": [
         "Rule of thirds",
-        "Symmetry"
+        "Leading lines"
     ],
     "Genre": [
-        "Comedy"
+        "Comedy",
+        "Adventure"
     ],
     "Editing Style": [
         "Continuous"
     ],
-    "Texture": "Glossy",
+    "Texture": "Smooth",
     "Style": [
-        "Modern"
+        "Modern",
+        "Cartoonish"
     ],
     "Audio": [
         "Diegetic sound",

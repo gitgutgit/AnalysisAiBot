@@ -1,23 +1,23 @@
 {
-    "id": "chatcmpl-9ezTOe7sVdIRmFeXYxlqVUpp8wPw9",
+    "id": "chatcmpl-9f1E5IQXqNbEXShNP5YZSFvfVoapZ",
     "object": "chat.completion",
-    "created": 1719556450,
+    "created": 1719563189,
     "model": "gpt-4o-2024-05-13",
     "choices": [
         {
             "index": 0,
             "message": {
                 "role": "assistant",
-                "content": "```json\n{\n  \"Number of People\": \"10 or more people\",\n  \"Characters\": [\"Various ages and genders\"],\n  \"Ethnicity\": \"Mixed race\",\n  \"Screen Speed\": \"Normal speed\",\n  \"Technique\": [\"Parody\", \"Humor\"],\n  \"Color\": \"Color\",\n  \"Era\": \"Present\",\n  \"Background\": [\"Indoor\", \"Outdoor\"],\n  \"Perspective\": [\"Third-person perspective\", \"Facing the camera\"],\n  \"Angle\": [\"Eye level\", \"Low angle shot\", \"Bird's eye view\"],\n  \"Camera Movement\": [\"Static\", \"Pan\"],\n  \"Action\": [\"Celebrating\", \"Watching\", \"Showing card\", \"Reacting\"],\n  \"Emotion Expression\": [\"Happy\", \"Surprised\", \"Excited\"],\n  \"Mood\": [\"Cheerful\", \"Energetic\"],\n  \"Animals\": \"None\",\n  \"Lighting\": [\"Artificial light\", \"Natural light\"],\n  \"Composition\": [\"Rule of thirds\", \"Symmetry\"],\n  \"Genre\": [\"Comedy\"],\n  \"Editing Style\": [\"Continuous\"],\n  \"Texture\": \"Glossy\",\n  \"Style\": [\"Modern\"],\n  \"Audio\": [\"Diegetic sound\", \"Soundtrack\"],\n  \"Narrative Structure\": \"Linear\"\n}\n```"
+                "content": "```json\n{\n\t\"인원 수\": [\"여러 명\", \"10명 이상\"],\n\t\"등장인물\": [\"유명인사\", \"만화 캐릭터\"],\n\t\"인종\": [\"기타 아시아인\", \"백인\", \"흑인\"],\n\t\"기법\": [\"3D 애니메이션\", \"셀 애니메이션\", \"액션\", \"패러디\"],\n\t\"색상\": [\"유사색\", \"단색\", \"밝은 색\"],\n\t\"시대\": [\"현재\"],\n\t\"배경\": [\"야외\", \"눈 덮인 산\", \"텐트 캠프\"],\n\t\"시점\": [\"3인칭 시점\", \"카메라 응시\"],\n\t\"각도\": [\"눈높이\", \"고각 샷\", \"버드 아이 뷰\"],\n\t\"카메라 움직임\": \"정적\",\n\t\"행동\": [\"탐험\", \"대화\", \"고민도\", \"클라이밍\"],\n\t\"감정 표현\": [\"집중한\", \"놀란\"],\n\t\"분위기\": [\"활기찬\", \"러크비\"],\n\t\"동물\": \"없음\",\n\t\"조명\": [\"자연광\"],\n\t\"구성\": [\"삼분의 일 법칙\", \"대칭\"],\n\t\"장르\": [\"액션\", \"코미디\", \"패러디\"],\n\t\"편집 스타일\": \"연속적\",\n\t\"텍스처\": \"매끄럼\",\n\t\"스타일\": \"현대적\",\n\t\"오디오\": \"비내재음\",\n\t\"서사 구조\": \"비선형\"\n}\n```"
             },
             "logprobs": null,
             "finish_reason": "stop"
         }
     ],
     "usage": {
-        "prompt_tokens": 5099,
-        "completion_tokens": 261,
-        "total_tokens": 5360
+        "prompt_tokens": 10681,
+        "completion_tokens": 361,
+        "total_tokens": 11042
     },
     "system_fingerprint": "fp_4008e3b719"
 }

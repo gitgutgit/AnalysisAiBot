@@ -1,59 +1,60 @@
 {
     "Number of People": "Multiple people",
     "Characters": [
-        "30s (male)",
-        "30s (female)",
-        "Middle-aged gentleman",
-        "Middle-aged woman",
-        "Realistic animation"
+        "Various ages and genders"
     ],
     "Ethnicity": "Mixed race",
     "Technique": [
         "Character animation",
-        "Realistic animation",
-        "Compositing"
+        "Humor"
     ],
-    "Color": "Color",
+    "Color": "Vibrant",
     "Era": "Present",
     "Background": [
-        "Outdoor",
-        "Aerial SF"
+        "Indoor",
+        "Outdoor"
     ],
     "Perspective": [
         "Third-person perspective",
         "Facing the camera"
     ],
     "Angle": [
-        "Eye level"
+        "Eye level",
+        "Aerial shot"
     ],
-    "Camera Movement": "Static",
+    "Camera Movement": [
+        "Static",
+        "Tracking"
+    ],
     "Action": [
-        "Talking",
-        "Standing",
-        "Reacting"
+        "Watching",
+        "Reacting",
+        "Showing card"
     ],
     "Emotion Expression": [
-        "Serious",
-        "Focused",
-        "Happy"
+        "Happy",
+        "Excited",
+        "Surprised"
     ],
     "Mood": [
         "Cheerful",
-        "Focused",
-        "Serious"
+        "Energetic",
+        "Playful"
     ],
-    "Animals": "None",
+    "Animals": [
+        "Pet",
+        "Dog"
+    ],
     "Composition": [
         "Rule of thirds",
         "Symmetry"
     ],
     "Genre": [
-        "Comedy",
-        "Action",
-        "Adventure"
+        "Comedy"
     ],
     "Editing Style": "Continuous",
     "Style": [
-        "Modern"
+        "Modern",
+        "Humorous"
     ]
 }

@@ -1,58 +1,73 @@
 {
-    "Number of People": "Multiple people",
+    "Number of People": "+ etc.",
     "Characters": [
+        "20s (female)",
         "30s (male)",
         "30s (female)",
         "Middle-aged gentleman",
-        "Middle-aged woman",
-        "Realistic animation"
+        "Teenagers (male)",
+        "2D animation characters",
+        "3D animation characters"
     ],
-    "Ethnicity": "Mixed race",
+    "Ethnicity": [
+        "Caucasian",
+        "Other Asian",
+        "Mixed race"
+    ],
     "Technique": [
         "Character animation",
         "Realistic animation",
+        "Cartoonish animation",
         "Compositing"
     ],
     "Color": "Color",
     "Era": "Present",
     "Background": [
         "Outdoor",
-        "Aerial SF"
+        "Mountain"
     ],
     "Perspective": [
         "Third-person perspective",
         "Facing the camera"
     ],
     "Angle": [
-        "Eye level"
+        "Eye level",
+        "Aerial shot"
     ],
-    "Camera Movement": "Static",
+    "Camera Movement": [
+        "Static",
+        "Pan"
+    ],
     "Action": [
-        "Talking",
         "Standing",
-        "Reacting"
+        "Talking",
+        "Laying down",
+        "Climbing"
     ],
     "Emotion Expression": [
         "Serious",
-        "Focused",
-        "Happy"
+        "Shocked",
+        "Focused"
     ],
     "Mood": [
-        "Cheerful",
-        "Focused",
-        "Serious"
+        "Mysterious",
+        "Energetic",
+        "Serious",
+        "Cheerful"
     ],
     "Animals": "None",
     "Composition": [
         "Rule of thirds",
-        "Symmetry"
+        "Leading lines"
     ],
     "Genre": [
         "Comedy",
-        "Action",
+        "Drama",
         "Adventure"
     ],
-    "Editing Style": "Continuous",
+    "Editing Style": [
+        "Continuous"
+    ],
     "Style": [
         "Modern"
     ]

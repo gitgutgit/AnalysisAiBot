@@ -17,3 +17,8 @@ AnalysisAiBotV0.3 py  -> bring json contents from json files
 
 AnalysisAiBotV0.4 py (AnaylsisAiBotStreamlit.py) -> same results,but now can change the images folder, change template, saved json file name
   streamlit run name.py
+
+
+
+AnalysisAiBotV0.5 py (AnaylsisAiBotStreamlit.py is not 0.5v, but experiment version):
+Fix the critical bugs that bring the wrong order files from path. ->  previous (lesser than 20 percent accurancy) - > near to 60 percent.

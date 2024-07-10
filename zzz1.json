@@ -1,0 +1,55 @@
+{
+    "Number of People": [
+        {
+            "label": "several people",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Characters": [],
+    "Ethnicity": [],
+    "Speed": [],
+    "Technique": [
+        {
+            "label": "live-action",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Color": [
+        {
+            "label": "color",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Era": [
+        {
+            "label": "present",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Background": [
+        {
+            "label": "indoor",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Time": [],
+    "Weather": [],
+    "Perspective": [
+        {
+            "label": "third person perspective",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,262 @@
+{
+    "Number of People": {
+        "label": "more than 10 people",
+        "images": [
+            "I_002",
+            "I_004",
+            "I_006",
+            "I_008",
+            "I_012",
+            "I_013",
+            "I_014",
+            "I_015"
+        ]
+    },
+    "Characters": {
+        "label": "Various ages and genders",
+        "images": [
+            "I_002",
+            "I_004",
+            "I_006",
+            "I_008",
+            "I_012",
+            "I_013",
+            "I_014",
+            "I_015"
+        ]
+    },
+    "Ethnicity": {
+        "label": "Mixed race",
+        "images": [
+            "I_002",
+            "I_004",
+            "I_006",
+            "I_008",
+            "I_012",
+            "I_013",
+            "I_014",
+            "I_015"
+        ]
+    },
+    "Technique": [
+        {
+            "label": "live-action",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        },
+        {
+            "label": "CGI",
+            "images": [
+                "I_003",
+                "I_005",
+                "I_007",
+                "I_009",
+                "I_010",
+                "I_011"
+            ]
+        }
+    ],
+    "Color": {
+        "label": "Vibrant",
+        "images": [
+            "I_001",
+            "I_002",
+            "I_004",
+            "I_005",
+            "I_006",
+            "I_007",
+            "I_008",
+            "I_010",
+            "I_012",
+            "I_013",
+            "I_014",
+            "I_015"
+        ]
+    },
+    "Era": {
+        "label": "Present",
+        "images": [
+            "I_001",
+            "I_002",
+            "I_004",
+            "I_006",
+            "I_008",
+            "I_012",
+            "I_013",
+            "I_014",
+            "I_015"
+        ]
+    },
+    "Background": [
+        {
+            "label": "Indoor",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        },
+        {
+            "label": "Outdoor",
+            "images": [
+                "I_003",
+                "I_005",
+                "I_010",
+                "I_011"
+            ]
+        }
+    ],
+    "Perspective": [
+        {
+            "label": "Third person perspective",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        },
+        {
+            "label": "Top-down perspective",
+            "images": [
+                "I_003",
+                "I_010",
+                "I_011"
+            ]
+        }
+    ],
+    "Camera Angle": [
+        {
+            "label": "Eye-level shot",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        },
+        {
+            "label": "Aerial shot",
+            "images": [
+                "I_003",
+                "I_010",
+                "I_011"
+            ]
+        }
+    ],
+    "Model Action": [
+        {
+            "label": "Celebrating",
+            "images": [
+                "I_002",
+                "I_012",
+                "I_015"
+            ]
+        },
+        {
+            "label": "Watching",
+            "images": [
+                "I_004",
+                "I_006"
+            ]
+        },
+        {
+            "label": "Dancing",
+            "images": [
+                "I_006",
+                "I_013"
+            ]
+        }
+    ],
+    "Model Emotion": [
+        {
+            "label": "Excited",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        }
+    ],
+    "Mood": [
+        {
+            "label": "Cheerful",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        }
+    ],
+    "Animals": {
+        "label": "None",
+        "images": []
+    },
+    "Genre": [
+        {
+            "label": "Comedy",
+            "images": [
+                "I_001",
+                "I_002",
+                "I_004",
+                "I_006",
+                "I_008",
+                "I_012",
+                "I_013",
+                "I_014",
+                "I_015"
+            ]
+        }
+    ],
+    "Style": {
+        "label": "Modern",
+        "images": [
+            "I_001",
+            "I_002",
+            "I_004",
+            "I_006",
+            "I_008",
+            "I_012",
+            "I_013",
+            "I_014",
+            "I_015"
+        ]
+    }
+}

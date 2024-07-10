@@ -1,0 +1,168 @@
+{
+    "Number of People": [
+        {
+            "label": "one person",
+            "imagenum": [
+                "001",
+                "005"
+            ]
+        },
+        {
+            "label": "several people",
+            "imagenum": [
+                "002",
+                "003",
+                "004"
+            ]
+        }
+    ],
+    "Characters": [
+        {
+            "label": "thirties (male)",
+            "imagenum": [
+                "001",
+                "005"
+            ]
+        },
+        {
+            "label": "elderly (male)",
+            "imagenum": [
+                "002"
+            ]
+        },
+        {
+            "label": "twenties (male)",
+            "imagenum": [
+                "003"
+            ]
+        },
+        {
+            "label": "twenties (female)",
+            "imagenum": [
+                "003",
+                "004"
+            ]
+        }
+    ],
+    "Ethnicity": [
+        {
+            "label": "Black",
+            "imagenum": [
+                "002",
+                "003",
+                "004"
+            ]
+        },
+        {
+            "label": "Asian",
+            "imagenum": [
+                "003"
+            ]
+        },
+        {
+            "label": "White",
+            "imagenum": [
+                "004"
+            ]
+        }
+    ],
+    "Speed": [],
+    "Technique": [
+        {
+            "label": "live-action",
+            "imagenum": [
+                "001",
+                "002",
+                "003",
+                "004",
+                "005"
+            ]
+        },
+        {
+            "label": "humor",
+            "imagenum": [
+                "004"
+            ]
+        },
+        {
+            "label": "special equipment filming (e.g., flying cam)",
+            "imagenum": [
+                "001",
+                "005"
+            ]
+        }
+    ],
+    "Color": [
+        {
+            "label": "vibrant colors",
+            "imagenum": [
+                "002",
+                "003",
+                "004"
+            ]
+        },
+        {
+            "label": "color",
+            "imagenum": [
+                "001",
+                "005"
+            ]
+        }
+    ],
+    "Era": [
+        {
+            "label": "present",
+            "imagenum": [
+                "001",
+                "002",
+                "003",
+                "004",
+                "005"
+            ]
+        }
+    ],
+    "Background": [
+        {
+            "label": "sports field",
+            "imagenum": [
+                "001",
+                "005"
+            ]
+        },
+        {
+            "label": "indoor",
+            "imagenum": [
+                "002",
+                "003",
+                "004"
+            ]
+        }
+    ],
+    "Time": [],
+    "Weather": [
+        {
+            "label": "clear",
+            "imagenum": [
+                "001",
+                "005"
+            ]
+        }
+    ],
+    "Perspective": [
+        {
+            "label": "aerial",
+            "imagenum": [
+                "001"
+            ]
+        },
+        {
+            "label": "third person perspective",
+            "imagenum": [
+                "002",
+                "003",
+                "004",
+                "005"
+            ]
+        }
+    ]
+}

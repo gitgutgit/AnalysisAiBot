@@ -1,0 +1,90 @@
+{
+    "Number of People": [
+        {
+            "label": "one person",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Characters": [
+        {
+            "label": "can't determine",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Ethnicity": [
+        {
+            "label": "can't determine",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Speed": [
+        {
+            "label": "can't determine",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Technique": [
+        {
+            "label": "live-action",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Color": [
+        {
+            "label": "color",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Era": [
+        {
+            "label": "present",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Background": [
+        {
+            "label": "simple_background",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Time": [
+        {
+            "label": "night",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Weather": [
+        {
+            "label": "clear",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ],
+    "Perspective": [
+        {
+            "label": "aerial",
+            "imagenum": [
+                "001"
+            ]
+        }
+    ]
+}

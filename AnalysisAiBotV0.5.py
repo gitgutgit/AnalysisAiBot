@@ -47,8 +47,8 @@ def natural_sort_key(s):
 
 
 # Get list of image files
-image_files = [f for f in os.listdir(image_dir) if os.path.isfile(os.path.join(image_dir, f))]
-
+# image_files = [f for f in os.listdir(image_dir) if os.path.isfile(os.path.join(image_dir, f))]
+image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if os.path.isfile(os.path.join(image_dir, f)) and f != '.DS_Store']
 #sort before base64 encoding
 image_files.sort(key=natural_sort_key)
 
@@ -62,8 +62,8 @@ messages = []
 
 # Process each image and add to messages
 for image_file in image_files:
-    image_path = os.path.join(image_dir, image_file)
-    base64_image = encode_image(image_path)
+    # image_path = os.path.join(image_dir, image_file)
+    base64_image = encode_image(image_file)
     messages.append({
         "role": "user",
         "content": [

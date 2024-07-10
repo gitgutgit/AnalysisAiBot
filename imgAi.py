@@ -39,8 +39,8 @@ print("list of image_files: ", image_files)
 
 
 #random select
-base64_image = encode_image(image_files[1])
-print(image_files[1])
+base64_image = encode_image(image_files[2])
+print(image_files[2])
 headers = {
   "Content-Type": "application/json",
   "Authorization": f"Bearer {api_key}"

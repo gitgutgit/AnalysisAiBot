@@ -1,0 +1,202 @@
+{
+    "Number of People": [
+        {
+            "label": "several people",
+            "imagenum": [
+                "001",
+                "002",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "crowd",
+            "imagenum": [
+                "012",
+                "013"
+            ]
+        }
+    ],
+    "Characters": [
+        {
+            "label": "various (mixed)",
+            "imagenum": [
+                "001",
+                "002",
+                "007",
+                "008",
+                "009",
+                "010",
+                "012",
+                "013"
+            ]
+        },
+        {
+            "label": "others",
+            "imagenum": [
+                "001",
+                "002",
+                "005",
+                "006"
+            ]
+        }
+    ],
+    "Ethnicity": [
+        {
+            "label": "Mixed",
+            "imagenum": [
+                "001",
+                "002",
+                "007",
+                "008",
+                "009",
+                "010",
+                "012",
+                "013"
+            ]
+        }
+    ],
+    "Speed": [],
+    "Technique": [
+        {
+            "label": "live-action",
+            "imagenum": [
+                "001",
+                "002",
+                "006",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "special equipment filming (e.g., flying cam)",
+            "imagenum": [
+                "003",
+                "004"
+            ]
+        },
+        {
+            "label": "special equipment filming",
+            "imagenum": [
+                "003",
+                "004"
+            ]
+        },
+        {
+            "label": "CGI",
+            "imagenum": [
+                "005",
+                "006",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "animation",
+            "imagenum": [
+                "012",
+                "013",
+                "014",
+                "015"
+            ]
+        }
+    ],
+    "Color": [
+        {
+            "label": "vibrant colors",
+            "imagenum": [
+                "001",
+                "002",
+                "005",
+                "007",
+                "008",
+                "009",
+                "010",
+                "012",
+                "013",
+                "014",
+                "015"
+            ]
+        },
+        {
+            "label": "color",
+            "imagenum": [
+                "003",
+                "004",
+                "006"
+            ]
+        }
+    ],
+    "Era": [
+        {
+            "label": "present",
+            "imagenum": [
+                "001",
+                "002",
+                "003",
+                "004",
+                "005",
+                "006",
+                "007",
+                "008",
+                "009",
+                "010",
+                "012",
+                "013",
+                "014",
+                "015"
+            ]
+        }
+    ],
+    "Background": [
+        {
+            "label": "indoor",
+            "imagenum": [
+                "001",
+                "002",
+                "006",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "other",
+            "imagenum": [
+                "003",
+                "004",
+                "012",
+                "013"
+            ]
+        }
+    ],
+    "Time": [],
+    "Weather": [],
+    "Perspective": [
+        {
+            "label": "third person perspective",
+            "imagenum": [
+                "001",
+                "002",
+                "006",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "aerial",
+            "imagenum": [
+                "003"
+            ]
+        }
+    ]
+}

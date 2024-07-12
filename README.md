@@ -22,3 +22,8 @@ AnalysisAiBotV0.4 py (AnaylsisAiBotStreamlit.py) -> same results,but now can cha
 
 AnalysisAiBotV0.5 py (AnaylsisAiBotStreamlit.py is not 0.5v, but experiment version):
 Fix the critical bugs that bring the wrong order files from path. ->  previous (lesser than 20 percent accurancy) - > near to 60 percent.
+
+AnalysisAiBotV0.6py 
+until 0.5V ,  img -> text(explanation) -> tag
+0.6v   img-> tag (direct)
+

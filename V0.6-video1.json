@@ -5,23 +5,24 @@
             "imagenum": [
                 "001",
                 "002",
+                "003",
                 "006",
                 "007",
                 "008",
                 "009",
-                "012",
-                "013"
+                "010",
+                "011",
+                "012"
             ]
         },
         {
             "label": "one person",
             "imagenum": [
-                "003",
                 "004"
             ]
         },
         {
-            "label": "two people",
+            "label": "more than 10 people",
             "imagenum": [
                 "010",
                 "011"
@@ -30,84 +31,84 @@
     ],
     "Characters": [
         {
-            "label": "elderly (male)",
-            "imagenum": [
-                "002"
-            ]
-        },
-        {
-            "label": "twenties (male)",
+            "label": "thirties (male)",
             "imagenum": [
                 "004"
             ]
         },
         {
-            "label": "celebrity",
+            "label": "twenties (female)",
             "imagenum": [
-                "014",
-                "015",
-                "016"
+                "001",
+                "007",
+                "008",
+                "009"
+            ]
+        },
+        {
+            "label": "thirties (female)",
+            "imagenum": [
+                "001",
+                "009",
+                "010"
             ]
         }
     ],
     "Ethnicity": [
         {
-            "label": "Black",
+            "label": "Mixed",
             "imagenum": [
                 "001",
-                "004"
-            ]
-        },
-        {
-            "label": "Other",
-            "imagenum": [
                 "002",
+                "004",
+                "007",
+                "008",
                 "009"
-            ]
-        },
-        {
-            "label": "Asian",
-            "imagenum": [
-                "002"
             ]
         }
     ],
     "Speed": [],
     "Technique": [
         {
+            "label": "animation",
+            "imagenum": [
+                "005",
+                "006",
+                "007",
+                "008",
+                "009"
+            ]
+        },
+        {
             "label": "live-action",
             "imagenum": [
                 "001",
                 "002",
+                "003",
                 "004",
-                "006",
-                "007",
-                "008",
-                "009",
                 "010",
                 "011"
             ]
         },
         {
-            "label": "animation",
+            "label": "parody",
             "imagenum": [
                 "005",
-                "012",
-                "013"
+                "006"
             ]
         },
         {
-            "label": "character animation",
+            "label": "other artistic techniques",
+            "imagenum": [
+                "001",
+                "002"
+            ]
+        },
+        {
+            "label": "CGI",
             "imagenum": [
                 "005",
-                "006",
-                "007",
-                "008",
-                "009",
-                "010",
-                "011",
-                "012",
-                "013"
+                "006"
             ]
         }
     ],
@@ -115,27 +116,13 @@
         {
             "label": "vibrant colors",
             "imagenum": [
-                "001",
-                "002",
-                "003",
-                "004",
                 "005",
                 "006",
                 "007",
                 "008",
                 "009",
                 "010",
-                "011",
-                "012",
-                "013"
-            ]
-        },
-        {
-            "label": "monochrome",
-            "imagenum": [
-                "014",
-                "015",
-                "016"
+                "011"
             ]
         }
     ],
@@ -145,38 +132,40 @@
             "imagenum": [
                 "001",
                 "002",
+                "003",
                 "004",
-                "005",
-                "006",
                 "007",
                 "008",
                 "009",
                 "010",
-                "011",
-                "012",
-                "013",
-                "014",
-                "015",
-                "016"
+                "011"
             ]
         }
     ],
     "Background": [
         {
-            "label": "indoor",
+            "label": "stage_studio",
             "imagenum": [
                 "001",
                 "002",
+                "003",
+                "004",
+                "007",
+                "008",
                 "009",
                 "010",
                 "011"
             ]
         },
         {
-            "label": "urban",
+            "label": "indoor",
             "imagenum": [
                 "001",
                 "002",
+                "003",
+                "004",
+                "007",
+                "008",
                 "009",
                 "010",
                 "011"
@@ -191,20 +180,11 @@
             "imagenum": [
                 "001",
                 "002",
-                "004",
-                "005",
                 "006",
                 "007",
                 "008",
                 "009",
-                "010",
-                "011"
-            ]
-        },
-        {
-            "label": "aerial",
-            "imagenum": [
-                "003"
+                "010"
             ]
         }
     ]

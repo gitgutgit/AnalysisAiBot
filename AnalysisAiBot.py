@@ -60,7 +60,7 @@ for image_file in image_files:
             }
         ]
     })
-    
+
 prompt = f"""
 What’s in these images? Treat them as a single advertisement and provide a summary in JSON format using the given template:
 

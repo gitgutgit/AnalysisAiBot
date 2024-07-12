@@ -3,10 +3,17 @@
 ## 1. MultipleimgsAi (Prompt reinforcement learning for better performance )
 
 oldversion - imgAi.py (single img)
+
 MultipleImgsAi_V0.1.py  ->  Multiple img
+
 MultipleImgsAi_V0.2.py  -> write results on json,txt files , and set reasonable max_token value by variable
+
 MultipleImgsAi_V0.3.py -> Korean version tag, increase maxtokens per each img 800 -> 1100 
+
 MultipleImgsAi_V0.4.py -> enhance prompt (optimize + control simple case (ex: only logo) )
+
+MultipleImgsAi_V0.5.py -> add Cost Cacluation (token calculator), fix encoding (but  answers become simple)
+
 
 ## 2. AnalysisAibot
 Anaylsis images from short videos

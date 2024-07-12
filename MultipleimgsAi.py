@@ -3,7 +3,6 @@ import requests
 import os
 import json
 import re
-
 import toml
 # OpenAI API Key
 api_key =""

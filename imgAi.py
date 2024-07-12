@@ -78,5 +78,5 @@ payload = {
 
 response = requests.post("https://api.openai.com/v1/chat/completions", headers=headers, json=payload)
 # Printing only the content of the response
-response_content = response.json().get('choices')[0].get('message').get('content')
+response_content = response.json()['choices'][0]['message']['content']
 print(response_content)

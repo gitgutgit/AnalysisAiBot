@@ -1,23 +1,23 @@
 {
-    "id": "chatcmpl-9k351d96PpHK9q6HBvlXE1cqA3FJF",
+    "id": "chatcmpl-9k3Exf9x9QvsiQZz17k615GEqslJj",
     "object": "chat.completion",
-    "created": 1720761955,
+    "created": 1720762571,
     "model": "gpt-4o-2024-05-13",
     "choices": [
         {
             "index": 0,
             "message": {
                 "role": "assistant",
-                "content": "```json\n{\n  \"Number of People\": [\n    {\n      \"label\": \"several people\",\n      \"imagenum\": [\"001\", \"002\", \"007\", \"008\", \"013\", \"014\"]\n    },\n    {\n      \"label\": \"two people + others\",\n      \"imagenum\": [\"010\", \"011\", \"012\"]\n    }\n  ],\n  \"Characters\": [\n    {\n      \"label\": \"elderly (male)\",\n      \"imagenum\": [\"002\"]\n    },\n    {\n      \"label\": \"twenties (male)\",\n      \"imagenum\": [\"004\"]\n    },\n    {\n      \"label\": \"twenties (female)\",\n      \"imagenum\": [\"008\", \"011\", \"012\"]\n    },\n    {\n      \"label\": \"children (female)\",\n      \"imagenum\": [\"004\", \"005\", \"011\"]\n    }\n  ],\n  \"Ethnicity\": [\n    {\n      \"label\": \"Other\",\n      \"imagenum\": [\"001\", \"002\", \"004\", \"008\", \"010\", \"011\", \"012\", \"013\", \"014\"]\n    }\n  ],\n  \"Speed\": [],\n  \"Technique\": [\n    {\n      \"label\": \"live-action\",\n      \"imagenum\": [\"001\", \"002\", \"010\", \"011\", \"012\"]\n    },\n    {\n      \"label\": \"animation\",\n      \"imagenum\": [\"005\", \"006\"]\n    },\n    {\n      \"label\": \"character animation\",\n      \"imagenum\": [\"006\", \"007\", \"010\"]\n    }\n  ],\n  \"Color\": [\n    {\n      \"label\": \"vibrant colors\",\n      \"imagenum\": [\"001\", \"004\", \"005\", \"006\", \"007\", \"008\", \"010\", \"011\", \"012\", \"013\", \"014\"]\n    }\n  ],\n  \"Era\": [\n    {\n      \"label\": \"present\",\n      \"imagenum\": [\"001\", \"002\", \"004\", \"005\", \"007\", \"008\", \"010\", \"011\", \"012\", \"013\", \"015\"]\n    }\n  ],\n  \"Background\": [\n    {\n      \"label\": \"indoor\",\n      \"imagenum\": [\"001\", \"002\", \"007\", \"008\", \"010\", \"011\", \"012\"]\n    },\n    {\n      \"label\": \"field\",\n      \"imagenum\": [\"003\"]\n    },\n    {\n      \"label\": \"other\",\n      \"imagenum\": [\"006\", \"009\"]\n    }\n  ],\n  \"Time\": [],\n  \"Weather\": [],\n  \"Perspective\": [\n    {\n      \"label\": \"third person perspective\",\n      \"imagenum\": [\"001\", \"002\", \"003\", \"004\", \"005\", \"007\", \"008\", \"011\", \"012\"]\n    },\n    {\n      \"label\": \"first person perspective\",\n      \"imagenum\": [\"004\"]\n    },\n    {\n      \"label\": \"subjective perspective\",\n      \"imagenum\": [\"005\", \"009\"]\n    }\n  ]\n}\n```"
+                "content": "```json\n{\n  \"Number of People\": [\n    {\"label\": \"several people\", \"imagenum\": [\"001\", \"002\", \"007\", \"008\", \"009\", \"010\"]},\n    {\"label\": \"crowd\", \"imagenum\": [\"011\", \"012\"]}\n  ],\n  \"Characters\": [\n    {\"label\": \"thirties (male)\", \"imagenum\": [\"004\"]}\n  ],\n  \"Ethnicity\": [\n    {\"label\": \"Other\", \"imagenum\": [\"001\", \"002\", \"004\", \"007\", \"008\", \"009\", \"010\"]}\n  ],\n  \"Speed\": [],\n  \"Technique\": [\n    {\"label\": \"live-action\", \"imagenum\": [\"001\", \"002\", \"004\"]},\n    {\"label\": \"animation\", \"imagenum\": [\"005\", \"006\"]},\n    {\"label\": \"special equipment filming (e.g., flying cam)\", \"imagenum\": [\"003\"]},\n    {\"label\": \"other artistic techniques\", \"imagenum\": [\"011\", \"012\"]}\n  ],\n  \"Color\": [\n    {\"label\": \"vibrant colors\", \"imagenum\": [\"001\", \"002\", \"003\", \"004\", \"005\", \"006\", \"007\", \"008\", \"009\", \"010\", \"011\", \"012\"]}\n  ],\n  \"Era\": [\n    {\"label\": \"present\", \"imagenum\": [\"001\", \"002\", \"003\", \"004\", \"007\", \"008\", \"009\", \"010\", \"011\", \"012\"]},\n    {\"label\": \"future\", \"imagenum\": [\"005\", \"006\"]}\n  ],\n  \"Background\": [\n    {\"label\": \"indoor\", \"imagenum\": [\"001\", \"002\", \"007\", \"008\", \"009\", \"010\"]},\n    {\"label\": \"urban\", \"imagenum\": [\"001\", \"002\", \"007\", \"008\", \"009\", \"010\"]},\n    {\"label\": \"stadium\", \"imagenum\": [\"003\", \"004\"]}\n  ],\n  \"Time\": [\n    {\"label\": \"afternoon\", \"imagenum\": [\"001\", \"002\"]},\n    {\"label\": \"night\", \"imagenum\": [\"003\", \"004\"]}\n  ],\n  \"Weather\": [],\n  \"Perspective\": [\n    {\"label\": \"third person perspective\", \"imagenum\": [\"001\", \"002\", \"003\", \"004\", \"007\", \"008\", \"009\", \"010\"]},\n    {\"label\": \"panoramic perspective\", \"imagenum\": [\"003\"]}\n  ]\n}\n```"
             },
             "logprobs": null,
             "finish_reason": "stop"
         }
     ],
     "usage": {
-        "prompt_tokens": 5384,
-        "completion_tokens": 636,
-        "total_tokens": 6020
+        "prompt_tokens": 5388,
+        "completion_tokens": 542,
+        "total_tokens": 5930
     },
     "system_fingerprint": "fp_298125635f"
 }

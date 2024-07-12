@@ -1,0 +1,187 @@
+{
+    "Number of People": [
+        {
+            "label": "several people",
+            "imagenum": [
+                "001",
+                "002",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "crowd",
+            "imagenum": [
+                "011",
+                "012"
+            ]
+        }
+    ],
+    "Characters": [
+        {
+            "label": "thirties (male)",
+            "imagenum": [
+                "004"
+            ]
+        }
+    ],
+    "Ethnicity": [
+        {
+            "label": "Other",
+            "imagenum": [
+                "001",
+                "002",
+                "004",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        }
+    ],
+    "Speed": [],
+    "Technique": [
+        {
+            "label": "live-action",
+            "imagenum": [
+                "001",
+                "002",
+                "004"
+            ]
+        },
+        {
+            "label": "animation",
+            "imagenum": [
+                "005",
+                "006"
+            ]
+        },
+        {
+            "label": "special equipment filming (e.g., flying cam)",
+            "imagenum": [
+                "003"
+            ]
+        },
+        {
+            "label": "other artistic techniques",
+            "imagenum": [
+                "011",
+                "012"
+            ]
+        }
+    ],
+    "Color": [
+        {
+            "label": "vibrant colors",
+            "imagenum": [
+                "001",
+                "002",
+                "003",
+                "004",
+                "005",
+                "006",
+                "007",
+                "008",
+                "009",
+                "010",
+                "011",
+                "012"
+            ]
+        }
+    ],
+    "Era": [
+        {
+            "label": "present",
+            "imagenum": [
+                "001",
+                "002",
+                "003",
+                "004",
+                "007",
+                "008",
+                "009",
+                "010",
+                "011",
+                "012"
+            ]
+        },
+        {
+            "label": "future",
+            "imagenum": [
+                "005",
+                "006"
+            ]
+        }
+    ],
+    "Background": [
+        {
+            "label": "indoor",
+            "imagenum": [
+                "001",
+                "002",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "urban",
+            "imagenum": [
+                "001",
+                "002",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "stadium",
+            "imagenum": [
+                "003",
+                "004"
+            ]
+        }
+    ],
+    "Time": [
+        {
+            "label": "afternoon",
+            "imagenum": [
+                "001",
+                "002"
+            ]
+        },
+        {
+            "label": "night",
+            "imagenum": [
+                "003",
+                "004"
+            ]
+        }
+    ],
+    "Weather": [],
+    "Perspective": [
+        {
+            "label": "third person perspective",
+            "imagenum": [
+                "001",
+                "002",
+                "003",
+                "004",
+                "007",
+                "008",
+                "009",
+                "010"
+            ]
+        },
+        {
+            "label": "panoramic perspective",
+            "imagenum": [
+                "003"
+            ]
+        }
+    ]
+}

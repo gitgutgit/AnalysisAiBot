@@ -6,3 +6,11 @@ These images are frames taken from an advertisement video. Please tag them accor
 
 
 You are an expert in analyzing commercial videos, capable of thoroughly explaining camera techniques, the number of people present in the current shot, and other such elements
+
+
+
+  prompt = f"""You are an expert in analyzing commercial videos, capable of thoroughly explaining camera techniques, the number of people present in the current shot, and other such elements. Here is the list of elements (explain in korean) [if the]: {json.dumps(json_template_kor)}"""
+
+
+
+prompt = f"""You are an expert in analyzing commercial videos, capable of thoroughly explaining camera techniques, the number of people present in the current shot, and other such elements. If the image contains only text, do not provide analysis. Here is the list of elements (explain in Korean) [if applicable]: {json.dumps(json_template_kor)}"""

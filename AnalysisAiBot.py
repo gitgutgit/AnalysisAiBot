@@ -131,34 +131,8 @@ def tag_images(analyses, temperature):
         print("Response text:", response.text)
         return {}
 
-# Streamlit App
-st.title("Image Analysis and Tagging")
-
-# Input for image directory
-image_dir = st.text_input("Enter the image folder path:", "documents/image_sample/Images4")
-image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if os.path.isfile(os.path.join(image_dir, f)) and f != '.DS_Store']
-image_files.sort(key=natural_sort_key)
-
-# Select language for JSON template
-language = st.selectbox("Select the JSON template language:", ["en", "kor"])
-json_template_path = f"documents/json/visual_tag_{language}.json"
-json_example_answer_path = f"documents/json/response_sample_{language}.json"
-
-# Read json files
-with open(json_template_path, 'r', encoding='utf-8') as file:
-    json_template = json.load(file)
-
-with open(json_example_answer_path, 'r', encoding='utf-8') as file:
-    json_example_answer = json.load(file)
-
-# Input for temperature
-temperature = st.slider("Select the temperature for the tagging function:", 0.0, 1.0, 0.3)
-
-# Input for save directory and base filename
-save_dir = st.text_input("Enter the save folder path:", "results/")
-base_filename = st.text_input("Enter the base filename for saving results:", "0000")
-
-if st.button("Analyze Images"):
+# Function to analyze and tag images
+def analyze_and_tag_images(image_files, language, temperature, save_dir, base_filename):
     # Ensure save directory exists
     if not os.path.exists(save_dir):
         os.makedirs(save_dir)
@@ -224,3 +198,33 @@ if st.button("Analyze Images"):
     # Calculating total cost
     total_cost = calculate_cost(total_prompt_tokens, total_completion_tokens)
     st.write(f"Total cost for processing {len(image_files)} images: {total_cost:.2f} KRW")
+
+# Streamlit App
+st.title("Image Analysis and Tagging")
+
+# Input for image directory
+image_dir = st.text_input("Enter the image folder path:", "documents/image_sample/Images4")
+image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if os.path.isfile(os.path.join(image_dir, f)) and f != '.DS_Store']
+image_files.sort(key=natural_sort_key)
+
+# Select language for JSON template
+language = st.selectbox("Select the JSON template language:", ["en", "kor"])
+json_template_path = f"documents/json/visual_tag_{language}.json"
+json_example_answer_path = f"documents/json/response_sample_{language}.json"
+
+# Read json files
+with open(json_template_path, 'r', encoding='utf-8') as file:
+    json_template = json.load(file)
+
+with open(json_example_answer_path, 'r', encoding='utf-8') as file:
+    json_example_answer = json.load(file)
+
+# Input for temperature
+temperature = st.slider("Select the temperature for the tagging function:", 0.0, 1.0, 0.25)
+
+# Input for save directory and base filename
+save_dir = st.text_input("Enter the save folder path:", "results/")
+base_filename = st.text_input("Enter the base filename for saving results:", "0000")
+
+if st.button("Analyze and Tag Images"):
+    analyze_and_tag_images(image_files, language, temperature, save_dir, base_filename)

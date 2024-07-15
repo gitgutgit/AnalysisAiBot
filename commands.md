@@ -9,4 +9,4 @@ ps aux | grep python
 
 streamlit run AnalysisAiBot.py
 
-uvicorn main:app --reload
+uvicorn main:app --reload --port 8000 -> fastapi 가동 (8000은 포트번호)

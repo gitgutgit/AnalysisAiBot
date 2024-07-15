@@ -13,7 +13,7 @@ from typing import List
 
 app = FastAPI()
 
-# CORS 설정 (필요시)
+# CORS setting
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -22,7 +22,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 템플릿 설정
+# templates setting
 templates = Jinja2Templates(directory="templates")
 
 # Load OpenAI API Key

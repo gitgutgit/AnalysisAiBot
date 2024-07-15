@@ -1,5 +1,7 @@
 documents/image_sample
 documents/json
+documents/oldjson
 documents/dataset
+results
 .aivenv
 api_secrets.toml

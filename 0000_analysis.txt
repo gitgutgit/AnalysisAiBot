@@ -1,0 +1,61 @@
+Image 1: documents/image_sample/Images4/A000537837-1.JPG
+Analysis:
+이 장면을 분석하겠습니다:
+
+- **Number of People**: 한 명.
+- **Speed**: 해당 사항 없음.
+- **Technique**: CGI, 실사 촬영 결합 (live-action). 
+- **Color**: 컬러.
+- **Era**: 현대 또는 미래.
+- **Background**: 가상 배경 (구름 속 작은 행성).
+- **Time**: 낮 (구체적인 시간은 알 수 없음).
+- **Weather**: 맑음.
+- **Perspective**: 세로형 퍼스펙티브 (vertical perspective).
+- **Camera Angle**: 높은 각도 촬영 (high-angle shot).
+- **Model Action**: 확인 불가.
+- **Model Emotion**: 확인 불가.
+- **Animals**: 확인 불가.
+- **Genre**: 판타지 (추측).
+- **Style**: 현실적.
+- **Mood**: 고요함, 평화로움 (cheerful, calm).
+Prompt Tokens: 2922, Completion Tokens: 207
+
+========================================
+
+Image 2: documents/image_sample/Images4/A000537837-2.JPG
+Analysis:
+- **Number of People**: 한 사람
+- **Characters**: 20대 (여성)
+- **Speed**: 정상 속도
+- **Technique**: 실사
+- **Color**: 컬러
+- **Era**: 현재
+- **Background**: 실내
+- **Time**: 알 수 없음
+- **Weather**: 알 수 없음
+- **Perspective**: 삼인칭 시점
+- **Camera Angle**: 클로즈업 샷
+- **Model Action**: 웃음
+- **Model Emotion**: 즐겁다
+Prompt Tokens: 2922, Completion Tokens: 122
+
+========================================
+
+Image 3: documents/image_sample/Images4/A000537837-3.JPG
+Analysis:
+{"Number of People": ["several people"], "Background": ["indoor"], "Color": ["color"], "Model Action": ["discussing", "using devices (laptops, tablet)"], "Camera Angle": ["eye-level shot"], "Perspective": ["third person perspective"], "Mood": ["serious"], "Era": ["present"]} 
+
+이 이미지에서는 여러 사람이 실내에서 토론을 하고 있고, 일부는 노트북이나 태블릿을 사용하고 있습니다. 카메라는 눈높이에서 촬영되어 있으며, 전체적인 분위기는 진지합니다. 배경은 실내 공간이며 색상은 컬러로 보정되어 있습니다. 시대적 배경은 현재입니다.
+Prompt Tokens: 2922, Completion Tokens: 148
+
+========================================
+
+Image 4: documents/image_sample/Images4/A000537837-4.JPG
+Analysis:
+{"Number of People": "one person", "Technique": "CGI", "Background": "space", "Era": "future", "Model Action": "standing"}
+
+이 영상은 한 사람이 등장하며, CGI 기법을 사용하고 있습니다. 배경은 우주로 보이며, 미래 시대를 느낄 수 있습니다. 영상 속 인물은 서 있는 상태입니다.
+Prompt Tokens: 2922, Completion Tokens: 79
+
+========================================
+

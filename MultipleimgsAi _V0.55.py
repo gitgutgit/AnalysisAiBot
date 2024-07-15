@@ -18,18 +18,26 @@ def encode_image(image_path):
     with open(image_path, "rb") as image_file:
         return base64.b64encode(image_file.read()).decode('utf-8')
     
-    
-# Function to calculate the cost
+# Function to calculate the cost   1Dollar = 1340KRW 
 def calculate_cost(prompt_tokens, completion_tokens):
     return (prompt_tokens / 1000000 * 0.5 + completion_tokens / 1000000 * 1.5) * 1340
 
-
+# Function to generate a new file name if the file already exists
+def get_new_file_name(file_path):
+    base, ext = os.path.splitext(file_path)
+    counter = 1
+    new_file_path = f"{base}_{counter}{ext}"
+    while os.path.exists(new_file_path):
+        counter += 1
+        new_file_path = f"{base}_{counter}{ext}"
+    return new_file_path
 
 # Path to your image
-image_dir = "documents/image_sample/Images1"
+image_dir = "documents/image_sample/Images4" #change this directory to the directory where your images are stored
 json_template_path = "documents/json/visual_tag_en.json"
 json_template_kor_path = "documents/json/visual_tag_ko.json"
-
+json_example_answer_path = "documnets/json/response_sample.json"
+json_example_answer_kor_path = "documnets/json/response_sample_kor.json"
 # Read json file
 with open(json_template_path, 'r', encoding='utf-8') as file:
     json_template_eng = json.load(file)
@@ -37,6 +45,15 @@ with open(json_template_path, 'r', encoding='utf-8') as file:
 # Read json file
 with open(json_template_kor_path, 'r', encoding='utf-8') as file:
     json_template_kor = json.load(file)
+    
+# Read json file
+with open(json_example_answer_path, 'r', encoding='utf-8') as file:
+    json_example_answer = json.load(file)
+
+# Read json file
+with open(json_example_answer_kor_path, 'r', encoding='utf-8') as file:
+    json_example_answer_kor = json.load(file)
+    
 
 # For sorting
 def natural_sort_key(s):
@@ -95,7 +112,6 @@ def analyze_image(image_path):
 
     return response_json['choices'][0]['message']['content'], prompt_tokens, completion_tokens
 
-
 # Analyzing each image and storing responses in a list
 responses = []
 total_prompt_tokens = 0
@@ -114,8 +130,18 @@ for i, image_path in enumerate(image_files):
     })
     print(f"Analyzed {image_path}")
 
+# File paths
+txt_file_path = "image_analysis.txt"
+json_file_path = "image_analysis.json"
+
+# Generate new file names if they already exist
+if os.path.exists(txt_file_path):
+    txt_file_path = get_new_file_name(txt_file_path)
+if os.path.exists(json_file_path):
+    json_file_path = get_new_file_name(json_file_path)
+
 # Saving responses to a text file
-with open("image_analysis.txt", "w", encoding='utf-8') as txt_file:
+with open(txt_file_path, "w", encoding='utf-8') as txt_file:
     for response in responses:
         txt_file.write(f"Image {response['image_number']}: {response['image_path']}\n")
         txt_file.write(f"Analysis:\n{response['analysis']}\n")
@@ -123,14 +149,30 @@ with open("image_analysis.txt", "w", encoding='utf-8') as txt_file:
         txt_file.write("\n" + "="*40 + "\n\n")
 
 # Saving responses to a JSON file
-with open("image_analysis.json", "w", encoding='utf-8') as json_file:
+with open(json_file_path, "w", encoding='utf-8') as json_file:
     json.dump(responses, json_file, indent=4, ensure_ascii=False)
-
-# Calculating total cost
-total_cost = calculate_cost(total_prompt_tokens, total_completion_tokens)
-print(f"Total cost for processing {len(image_files)} images: {total_cost:.2f} KRW")
 
 # Printing all responses
 for response in responses:
     print(f"Image {response['image_number']}: {response['image_path']}\nAnalysis: {response['analysis']}\n")
     print(f"Prompt Tokens: {response['prompt_tokens']}, Completion Tokens: {response['completion_tokens']}\n")
+
+
+
+# Calculating total cost
+print("==========================\n \n \n")
+total_cost = calculate_cost(total_prompt_tokens, total_completion_tokens)
+print(f"Total cost for processing {len(image_files)} images: {total_cost:.2f} KRW")
+
+
+# text explanation -> tag imgs on json and txt files
+
+prompt2 = f"""
+         Please tag them according to the provided JSON format.
+        {json.dumps(json_template_kor)}
+
+        Example answer (this answer not related to below images):
+
+    {json.dumps(json_example_answer_kor)}
+   Below images are frames taken from an advertisement video.
+"""

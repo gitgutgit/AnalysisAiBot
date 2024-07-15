@@ -1,4 +1,7 @@
 # AnalysisAiBot
+(AnalysisAibot.py <- this is most recent version)
+## how to excute
+streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this)
 
 ## 1. MultipleimgsAi (Prompt reinforcement learning for better performance )
 
@@ -14,7 +17,17 @@ MultipleImgsAi_V0.4.py -> enhance prompt (optimize + control simple case (ex: on
 
 MultipleImgsAi_V0.5.py -> add Cost Cacluation (token calculator), fix encoding (but  answers become simple)
 
+MultipleImgsAi_V0.6.py (second goal done) ->  imgs->textExplanation(until 0.5v) , imgs->textExplanation->Tag(0.6v~)!!
 
+MultipleImgsAi_v0.7.py -> 1. normal python -> streamlit python
+                          2. option eng,kor version (template % answer)
+                          3. control bar (temperature (default =0.3)) 
+(After v0.7, AnaalysisBot and MultipleImgsAi are integreted)
+
+future -> 1. reduce hallucination
+          2. eng version (current [0.6v] is kor version )
+          3. convert to streamlit app (integrate or apply on AnalysisBot)
+                          
 ## 2. AnalysisAibot
 Anaylsis images from short videos
 

@@ -24,9 +24,9 @@ MultipleImgsAi_v0.7.py -> 1. normal python -> streamlit python
                           3. control bar (temperature (default =0.3)) 
 (After v0.7, AnaalysisBot and MultipleImgsAi are integreted)
 
-future -> 1. reduce hallucination
-          2. eng version (current [0.6v] is kor version )
-          3. convert to streamlit app (integrate or apply on AnalysisBot)
+
+todolist -> 1. reduce hallucination
+
                           
 ## 2. AnalysisAibot
 Anaylsis images from short videos

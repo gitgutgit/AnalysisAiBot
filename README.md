@@ -26,7 +26,7 @@ MultipleImgsAi_v0.7.py -> 1. normal python -> streamlit python
 
 
 todolist -> 1. reduce hallucination
-
+            2. generate api
                           
 ## 2. AnalysisAibot
 Anaylsis images from short videos

@@ -25,7 +25,7 @@ your_folder/
 │       ├── response_sample_kor.json
 └── results/ 
 
-\```markdown
+```
 ## how to excute
 
 [Sstreamlit version] streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this) 

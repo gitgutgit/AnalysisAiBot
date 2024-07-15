@@ -22,7 +22,6 @@ your_folder/
 |   └── image_sample
 
         └── Images1
-
           ├── video_F001.png 
 
 │   └── json/

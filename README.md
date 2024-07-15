@@ -25,7 +25,7 @@ your_folder/
 │       ├── response_sample_kor.json
 └── results/ 
 
-
+\```markdown
 ## how to excute
 
 [Sstreamlit version] streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this) 
@@ -109,4 +109,3 @@ V0.3 -> temperature default changed, use integrated function
   demoaivision.py -> basic api how to use img file
   imagepath.py  -> path printer (see order of the files)
   imgAi.py -> single img with simple prompt
-\```markdown

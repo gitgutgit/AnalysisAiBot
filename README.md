@@ -1,22 +1,27 @@
 # AnalysisAiBot
 
-[Quick app]
+[Quick start]
 AnalysisAibot.py <- this is most recent version
 main.py <- fast api
 
  Default directory structure for  application (the paths can be changed during the app execution process):
 
+  Need to generate  api_secrets.toml file put api key, and image_sample folder in documents, if you use default directory
 your_folder/
 ├── main.py
 ├── api_secrets.toml
 ├── templates/
 │   └── index.html
 ├── documents/
+|   └── image_sample
+        └── Images1
+          ├── video_F001.png ....
 │   └── json/
 │       ├── visual_tag_en.json
 │       ├── visual_tag_kor.json
 │       ├── response_sample_en.json
 │       ├── response_sample_kor.json
+|   
 └── results/
 
 ## how to excute

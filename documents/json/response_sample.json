@@ -1,0 +1,131 @@
+{
+  "Number of People": [
+    {
+      "label": "Multiple people",
+      "imagenum": ["001", "005", "008", "011", "016", "017"]
+    },
+    {
+      "label": "crowd",
+      "imagenum": ["020", "021"]
+    }
+  ],
+  "Characters": [
+    {
+      "label": "baby (female)",
+      "imagenum": ["001", "004", "005", "008"]
+    },
+    { "label": "thirties (male)", "imagenum": ["011", "012", "015", "016"] }
+  ],
+  "Ethnicity": [
+    {
+      "label": "Asian",
+      "imagenum": ["001", "003", "005"]
+    },
+    {
+      "label": "Black",
+      "imagenum": ["006", "010", "019"]
+    }
+  ],
+  "Speed": [
+    {
+      "label": "slow motion",
+      "imagenum": ["001", "004", "008"]
+    }
+  ],
+  "Technique": [
+    {
+      "label": "animation",
+      "imagenum": ["001", "006", "009", "019"]
+    },
+    {
+      "label": "grotesque",
+      "imagenum": ["001", "005", "006", "010", "019"]
+    }
+  ],
+  "Color": [
+    {
+      "label": "Vibrant",
+      "imagenum": ["001", "004", "006", "008", "009", "011"]
+    },
+    {
+      "label": "monochrome",
+      "imagenum": ["012", "016", "017", "018", "020", "022"]
+    }
+  ],
+  "Era": [
+    {
+      "label": "Present",
+      "imagenum": ["001", "004", "005", "006", "008", "009", "011"]
+    },
+    {
+      "label": "ancient Greece",
+      "imagenum": ["016", "017", "018"]
+    },
+    {
+      "label": "renaissance",
+      "imagenum": ["020", "022"]
+    }
+  ],
+  "Background": [
+    {
+      "label": "Outdoor",
+      "imagenum": [
+        "001",
+        "002",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "011",
+        "012",
+        "016",
+        "017",
+        "018",
+        "020",
+        "022"
+      ]
+    },
+    {
+      "label": "desert",
+      "imagenum": [
+        "001",
+        "002",
+        "004",
+        "005",
+        "006",
+        "007",
+        "008",
+        "009",
+        "011",
+        "012",
+        "016",
+        "017",
+        "018",
+        "020",
+        "022"
+      ]
+    }
+  ],
+  "Perspective": [
+    {
+      "label": "third person perspective",
+      "imagenum": [
+        "001",
+        "004",
+        "005",
+        "006",
+        "008",
+        "011",
+        "016",
+        "017",
+        "019"
+      ]
+    },
+    {
+      "label": "subjective perspective",
+      "imagenum": ["011", "012", "016", "017", "018", "020", "022"]
+    }
+  ]
+}

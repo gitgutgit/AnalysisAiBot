@@ -77,4 +77,5 @@ AnalysisAib0t_V0.8.py -> defalut temperature 0.3->0.25, make integra function to
 
 V0.1 -> just conver to Fast api (no main page)
 V0.2 -> main page (mini test)
+V0.3 -> temperature default changed, use integrated function
 

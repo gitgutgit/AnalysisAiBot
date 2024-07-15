@@ -236,7 +236,7 @@ async def analyze_and_tag_images(
     request: Request,
     files: List[UploadFile] = File(...),
     language: str = Form("en"),
-    temperature: float = Form(0.25),
+    temperature: float = Form(0.3),
     save_dir: str = Form("results"),
     base_filename: str = Form("0000")
 ):

@@ -1,13 +1,32 @@
 # AnalysisAiBot
-(AnalysisAibot.py <- this is most recent version)
+
+[Quick app]
+AnalysisAibot.py <- this is most recent version
 main.py <- fast api
+
+ Default directory structure for  application (the paths can be changed during the app execution process):
+
+your_folder/
+├── main.py
+├── api_secrets.toml
+├── templates/
+│   └── index.html
+├── documents/
+│   └── json/
+│       ├── visual_tag_en.json
+│       ├── visual_tag_kor.json
+│       ├── response_sample_en.json
+│       ├── response_sample_kor.json
+└── results/
+
 ## how to excute
 
 [Sstreamlit version] streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this) 
 
 [FastApi version] uvicorn main:app --reload --port 8000  (8000 is port number)   
 
-                    ->http://127.0.0.1:8000/docs  (8000 is port number)
+                    -> http://127.0.0.1:8000/docs  
+                    (8000 is port number)
 
 ## 1. MultipleimgsAi (Prompt reinforcement learning for better performance )
 
@@ -31,8 +50,7 @@ MultipleImgsAi_v0.7.py -> 1. normal python -> streamlit python
 (After v0.7, AnaalysisBot and MultipleImgsAi are integreted)
 
 
-todolist -> 1. reduce hallucination
-            2. generate api
+todolist -> 1. reduce hallucination (Find optimal temperature & enhance prompt)
                           
 ## 2. AnalysisAibot
 Anaylsis images from short videos
@@ -79,3 +97,8 @@ V0.1 -> just conver to Fast api (no main page)
 V0.2 -> main page (mini test)
 V0.3 -> temperature default changed, use integrated function
 
+
+## 4. others
+  demoaivision.py -> basic api how to use img file
+  imagepath.py  -> path printer (see order of the files)
+  imgAi.py -> single img with simple prompt

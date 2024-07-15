@@ -1,31 +1,13 @@
-from fastapi import FastAPI, UploadFile, File, Form
-from fastapi.responses import JSONResponse, HTMLResponse
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.templating import Jinja2Templates
-from starlette.requests import Request
+import streamlit as st
 import base64
 import requests
 import os
 import json
 import re
 import toml
-from typing import List
+from collections import defaultdict
 
-app = FastAPI()
-
-# CORS setting
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# templates setting
-templates = Jinja2Templates(directory="templates")
-
-# Load OpenAI API Key
+# OpenAI API Key
 api_key = ""
 with open("api_secrets.toml", "r") as f:
     secrets = toml.load(f)
@@ -34,8 +16,9 @@ with open("api_secrets.toml", "r") as f:
 max_tokens_img = 1100  # per each image (kor +300)
 
 # Function to encode the image
-def encode_image(image):
-    return base64.b64encode(image).decode('utf-8')
+def encode_image(image_path):
+    with open(image_path, "rb") as image_file:
+        return base64.b64encode(image_file.read()).decode('utf-8')
 
 # Function to calculate the cost
 def calculate_cost(prompt_tokens, completion_tokens):
@@ -56,8 +39,8 @@ def natural_sort_key(s):
     return [int(text) if text.isdigit() else text.lower() for text in re.split('([0-9]+)', s)]
 
 # Function to analyze an image
-def analyze_image(image, language, json_template):
-    base64_image = encode_image(image)
+def analyze_image(image_path, language):
+    base64_image = encode_image(image_path)
     explain_language = "Korean" if language == "kor" else "English"
 
     headers = {
@@ -100,7 +83,7 @@ def analyze_image(image, language, json_template):
     return response_json['choices'][0]['message']['content'], prompt_tokens, completion_tokens
 
 # Function to tag images based on analyses
-def tag_images(analyses, temperature, json_template, json_example_answer):
+def tag_images(analyses, temperature):
     headers = {
         "Content-Type": "application/json",
         "Authorization": f"Bearer {api_key}"
@@ -135,6 +118,7 @@ def tag_images(analyses, temperature, json_template, json_example_answer):
     # Debugging step to check response content
     try:
         response_json = response.json()
+        print("Response JSON:", response_json)
         
         # Remove code block notation and load JSON
         content = response_json['choices'][0]['message']['content']
@@ -147,26 +131,19 @@ def tag_images(analyses, temperature, json_template, json_example_answer):
         print("Response text:", response.text)
         return {}
 
-# New function to analyze and tag images
-def analyze_and_tag_images_function(files, language, temperature, save_dir, base_filename):
-    json_template_path = f"documents/json/visual_tag_{language}.json"
-    json_example_answer_path = f"documents/json/response_sample_{language}.json"
-
-    # Read json files
-    with open(json_template_path, 'r', encoding='utf-8') as file:
-        json_template = json.load(file)
-
-    with open(json_example_answer_path, 'r', encoding='utf-8') as file:
-        json_example_answer = json.load(file)
+# Function to analyze and tag images
+def analyze_and_tag_images(image_files, language, temperature, save_dir, base_filename):
+    # Ensure save directory exists
+    if not os.path.exists(save_dir):
+        os.makedirs(save_dir)
 
     responses = []
     total_prompt_tokens = 0
     total_completion_tokens = 0
     analyses = []
 
-    for i, file in enumerate(files):
-        image = file.file.read()
-        response_content, prompt_tokens, completion_tokens = analyze_image(image, language, json_template)
+    for i, image_path in enumerate(image_files):
+        response_content, prompt_tokens, completion_tokens = analyze_image(image_path, language)
         total_prompt_tokens += prompt_tokens
         total_completion_tokens += completion_tokens
         analyses.append({
@@ -175,14 +152,15 @@ def analyze_and_tag_images_function(files, language, temperature, save_dir, base
         })
         responses.append({
             "image_number": i + 1,
-            "filename": file.filename,
+            "image_path": image_path,
             "analysis": response_content,
             "prompt_tokens": prompt_tokens,
             "completion_tokens": completion_tokens
         })
+        st.write(f"Analyzed {image_path}")
 
     # Tagging images based on all analyses
-    tagged_responses = tag_images(analyses, temperature, json_template, json_example_answer)
+    tagged_responses = tag_images(analyses, temperature)
 
     # File paths
     txt_file_path = os.path.join(save_dir, f"{base_filename}_analysis.txt")
@@ -200,7 +178,7 @@ def analyze_and_tag_images_function(files, language, temperature, save_dir, base
     # Saving responses to a text file
     with open(txt_file_path, "w", encoding='utf-8') as txt_file:
         for response in responses:
-            txt_file.write(f"Image {response['image_number']}: {response['filename']}\n")
+            txt_file.write(f"Image {response['image_number']}: {response['image_path']}\n")
             txt_file.write(f"Analysis:\n{response['analysis']}\n")
             txt_file.write(f"Prompt Tokens: {response['prompt_tokens']}, Completion Tokens: {response['completion_tokens']}\n")
             txt_file.write("\n" + "="*40 + "\n\n")
@@ -213,36 +191,40 @@ def analyze_and_tag_images_function(files, language, temperature, save_dir, base
     with open(tag_json_file_path, "w", encoding='utf-8') as tag_json_file:
         json.dump(tagged_responses, tag_json_file, indent=4, ensure_ascii=False)
 
+    # Displaying results
+    st.write("Image analysis and tagging completed!")
+    st.write(f"Results saved to:\n- {txt_file_path}\n- {json_file_path}\n- {tag_json_file_path}")
+
     # Calculating total cost
     total_cost = calculate_cost(total_prompt_tokens, total_completion_tokens)
+    st.write(f"Total cost for processing {len(image_files)} images: {total_cost:.2f} KRW")
 
-    return {
-        "message": "Image analysis and tagging completed!",
-        "results": {
-            "text_file": txt_file_path,
-            "json_file": json_file_path,
-            "tag_json_file": tag_json_file_path
-        },
-        "total_cost_krw": total_cost,
-        "num_images_processed": len(files)
-    }
+# Streamlit App
+st.title("Image Analysis and Tagging")
 
-@app.get("/", response_class=HTMLResponse)
-def read_root(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
+# Input for image directory
+image_dir = st.text_input("Enter the image folder path:", "documents/image_sample/Images4")
+image_files = [os.path.join(image_dir, f) for f in os.listdir(image_dir) if os.path.isfile(os.path.join(image_dir, f)) and f != '.DS_Store']
+image_files.sort(key=natural_sort_key)
 
-@app.post("/analyze-and-tag-images/")
-async def analyze_and_tag_images(
-    request: Request,
-    files: List[UploadFile] = File(...),
-    language: str = Form("en"),
-    temperature: float = Form(0.3),
-    save_dir: str = Form("results"),
-    base_filename: str = Form("0000")
-):
-    results = analyze_and_tag_images_function(files, language, temperature, save_dir, base_filename)
-    return JSONResponse(content=results)
+# Select language for JSON template
+language = st.selectbox("Select the JSON template language:", ["en", "kor"])
+json_template_path = f"documents/json/visual_tag_{language}.json"
+json_example_answer_path = f"documents/json/response_sample_{language}.json"
 
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+# Read json files
+with open(json_template_path, 'r', encoding='utf-8') as file:
+    json_template = json.load(file)
+
+with open(json_example_answer_path, 'r', encoding='utf-8') as file:
+    json_example_answer = json.load(file)
+
+# Input for temperature
+temperature = st.slider("Select the temperature for the tagging function:", 0.0, 1.0, 0.25)
+
+# Input for save directory and base filename
+save_dir = st.text_input("Enter the save folder path:", "results/")
+base_filename = st.text_input("Enter the base filename for saving results:", "0000")
+
+if st.button("Analyze and Tag Images"):
+    analyze_and_tag_images(image_files, language, temperature, save_dir, base_filename)

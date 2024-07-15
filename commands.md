@@ -7,5 +7,6 @@ pip install -r requirements.txt 요구상황파일있을때 가져오기
 ps aux | grep python
 
 
-streamlit run app.py
+streamlit run AnalysisAiBot.py
 
+uvicorn main:app --reload

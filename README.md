@@ -1,7 +1,13 @@
 # AnalysisAiBot
 (AnalysisAibot.py <- this is most recent version)
+main.py <- fast api
 ## how to excute
-streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this)
+
+[Sstreamlit version] streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this) 
+
+[FastApi version] uvicorn main:app --reload --port 8000  (8000 is port number)   
+
+                    ->http://127.0.0.1:8000/docs  (8000 is port number)
 
 ## 1. MultipleimgsAi (Prompt reinforcement learning for better performance )
 
@@ -56,4 +62,9 @@ Fix the critical bugs that bring the wrong order files from path. ->  previous (
 AnalysisAiBotV0.6py 
 until 0.5V ,  img -> text(explanation) -> tag
 0.6v   img-> tag (direct)
+
+## 3. Main.py (FastAPi)
+
+V0.1 -> just conver to Fast api (no main page)
+V0.2 -> main page (mini test)
 

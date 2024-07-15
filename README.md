@@ -7,7 +7,7 @@ main.py <- fast api
  Default directory structure for  application (the paths can be changed during the app execution process):
 
   Need to generate  api_secrets.toml file put api key, and image_sample folder in documents, if you use default directory
-'''markdown
+\\\markdown
 your_folder/
 ├── main.py
 ├── api_secrets.toml
@@ -24,7 +24,7 @@ your_folder/
 │       ├── response_sample_en.json
 │       ├── response_sample_kor.json
 └── results/
-'''markdown
+\\\markdown
 
 ## how to excute
 

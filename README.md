@@ -27,7 +27,7 @@ your_folder/
 
 ```
 ## how to excute
-```plaintext
+```markdown
 [Sstreamlit version] streamlit run AnalysisAibot.py on terminal  (need to install streamlit before running this) 
 
 [FastApi version] uvicorn main:app --reload --port 8000  (8000 is port number)   

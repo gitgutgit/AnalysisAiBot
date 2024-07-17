@@ -1,6 +1,8 @@
 # AnalysisAiBot
 
 [Quick start]
+ [Setting]
+ pip install -r requirements.txt  <-install packages 
 AnalysisAibot.py <- this is most recent version
 main.py <- fast api
 
@@ -107,5 +109,7 @@ V0.3 -> temperature default changed, use integrated function
 
 ## 4. others
   demoaivision.py -> basic api how to use img file
+
   imagepath.py  -> path printer (see order of the files)
+
   imgAi.py -> single img with simple prompt

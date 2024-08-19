@@ -6,9 +6,9 @@
 AnalysisAibot.py <- this is most recent version
 main.py <- fast api
 
- 2/ Default directory structure for  application (the paths can be changed during the app execution process):
+ 2. Default directory structure for  application (the paths can be changed during the app execution process):
 
-  3/ Need to generate  api_secrets.toml file put api key, and image_sample folder in documents, if you use default directory
+  3. Need to generate  api_secrets.toml file put api key, and image_sample folder in documents, if you use default directory
 ```plaintext
 your_folder/
 ├── main.py

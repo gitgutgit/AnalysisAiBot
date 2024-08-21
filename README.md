@@ -4,8 +4,9 @@
  [Setting]
  1. pip install -r requirements.txt  <-install packages 
 
-AnalysisAibot.py <- this is most recent version (Streamlit)
-main.py <- fast api
+  AnalysisAibot.py <- this is most recent version (Streamlit)
+
+  main.py <- fast api
 
  2. Default directory structure for  application (the paths can be changed during the app execution process):
 
